@@ -29,7 +29,7 @@ export const useUserContext = () => {
     const context = useContext(UserContext)
 
     if(!context) 
-        throw("Element Wrap in UserContextProvider")
+        throw new Error("Element Wrap in UserContextProvider")
 
     return context
 }
